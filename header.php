@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beverages</title>
+    <title>GO GROCERY</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -59,19 +59,27 @@ session_start();
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="../about.php">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="../contact.php">CONTACT US</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search" style="padding-right: 10px;">
+                <!-- <form class="d-flex" role="search" style="padding-right: 10px;">
                     <input class="form-control me-2" type="search" placeholder="Search Beverages" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">
                         <span class="visually-hidden">Search</span>
                         <img src="assets/imgs/search-icon.jpg" alt="Search" style="width: 20px; height: 20px;">
                     </button>
-                </form>
+                </form> -->
+                <form class="d-flex" role="search" action="search.php" method="GET" style="padding-right: 10px;">
+    <input class="form-control me-2" type="search" name="query" placeholder="Search Store" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">
+        <span class="visually-hidden">Search</span>
+        <img src="assets/imgs/search-icon.jpg" alt="Search" style="width: 20px; height: 20px;">
+    </button>
+</form>
+
                 <a class="nav-link" href="cart.php">
                     <img src="./assets/imgs/cart.png" alt="Cart" style="width: 30px; height: 30px;">
                 </a>
