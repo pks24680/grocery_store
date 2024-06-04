@@ -23,7 +23,7 @@ session_start();
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><img src="assets/imgs/logo.jpg" alt="Online Grocery Store Logo" style="width: 50px;"></a>
+            <a class="navbar-brand" href="index.php"><img src="../assets/imgs/logo.jpg" alt="Online Grocery Store Logo" style="width: 50px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,6 +34,12 @@ session_start();
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.php#all-products">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../about.php">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../contact.php">CONTACT US</a>
                     </li>
                         <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownShop">
                             <li><a class="dropdown-item" href="frozen.php">FROZEN</a></li>
