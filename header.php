@@ -65,13 +65,7 @@ session_start();
                         <a class="nav-link" href="../contact.php">CONTACT US</a>
                     </li>
                 </ul>
-                <!-- <form class="d-flex" role="search" style="padding-right: 10px;">
-                    <input class="form-control me-2" type="search" placeholder="Search Beverages" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">
-                        <span class="visually-hidden">Search</span>
-                        <img src="assets/imgs/search-icon.jpg" alt="Search" style="width: 20px; height: 20px;">
-                    </button>
-                </form> -->
+                
                 <form class="d-flex" role="search" action="search.php" method="GET" style="padding-right: 10px;">
     <input class="form-control me-2" type="search" name="query" placeholder="Search Store" aria-label="Search">
     <button class="btn btn-outline-success" type="submit">
