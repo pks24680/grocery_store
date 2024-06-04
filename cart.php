@@ -12,28 +12,11 @@ if (isset($_POST["add_to_cart"])){
         $products_array_ids = array_column($_SESSION['cart'],'product_id');
         if(in_array($_POST['product_id'], $products_array_ids)){
 
-
-            // $product_id = $_POST['product_id'];
-            // $product_name = $_POST['product_name'];
-            // $product_price = $_POST['product_price'];
-            // $product_image = $_POST['product_image'];
-            // $product_quantity = $_POST['product_quantity'];
-     
-            // $product_array = array(
-            //  'product_id' => $product_id,
-            //  'product_name'=> $product_name,
-            //  'product_price'=> $product_price,
-            //  'product_image'=> $product_image,
-            //  'product_quantity'=> $product_quantity
-            // );
-     
-            // $_SESSION['cart'][$product_id] = $product_array;
             $_SESSION['cart'][$_POST['product_id']]['product_quantity']++;
             echo '<script>alert("Quantity updated in cart");</script>';
       
     }
     else{
-        //    echo '<script>alert("Already added");</script>';
         $product_id = $_POST['product_id'];
             $product_name = $_POST['product_name'];
             $product_price = $_POST['product_price'];
