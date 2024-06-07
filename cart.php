@@ -14,7 +14,6 @@ if (isset($_POST["add_to_cart"])){
 
             $_SESSION['cart'][$_POST['product_id']]['product_quantity']++;
             echo '<script>alert("Quantity updated in cart");</script>';
-      
     }
     else{
         $product_id = $_POST['product_id'];
@@ -134,9 +133,6 @@ function getCartFromCookie() {
 $cartItems = getCartFromCookie();
 
 ?>
-
-
-
 <section class="cart container my-5 py-5">
     <div class="container mt-5">
         <h2>Your Cart</h2>
@@ -225,10 +221,7 @@ $cartItems = getCartFromCookie();
         function updateCheckoutBtnStatus() {
             checkoutBtn.disabled = <?php echo isCartEmpty() ? 'true' : 'false'; ?>;
         }
-
         updateCheckoutBtnStatus();
-
-        
         window.addEventListener('cartUpdated', function() {
             updateCheckoutBtnStatus();
         });
